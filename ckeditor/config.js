@@ -36,4 +36,7 @@ CKEDITOR.editorConfig = function( config ) {
 	// Simplify the dialog windows.
 	config.removeDialogTabs = 'image:advanced;link:advanced';
     config.filebrowserUploadMethod = 'form'; // Added for file browser
+	
+        config.filebrowserUploadUrl = "/ckeditor/uploads/ajaxfile.php?type=file";
+        config.filebrowserImageUploadUrl = "/ckeditor/uploads/ajaxfile.php?type=image";
 };
