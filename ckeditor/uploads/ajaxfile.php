@@ -46,7 +46,7 @@ else if($type == 'file'){
 
     if(in_array(strtolower($file_extension),$allowed_extension)){
 
-       if(move_uploaded_file($_FILES['upload']['tmp_name'], "/uploads/".$_FILES['upload']['name'])){
+       if(move_uploaded_file($_FILES['upload']['tmp_name'], __DIR__."/uploads/".$_FILES['upload']['name'])){
           // File path
           if(isset($_SERVER['HTTPS'])){
               $protocol = ($_SERVER['HTTPS'] && $_SERVER['HTTPS'] != "off") ? "https" : "http";
