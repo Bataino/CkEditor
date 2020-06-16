@@ -14,9 +14,6 @@
      <script type="text/javascript">
      CKEDITOR.replace( 'editor', {
         height: 300,
-        filebrowserUploadUrl: "/ckeditor/uploads/ajaxfile.php?type=file",
-        filebrowserImageUploadUrl: "/ckeditor/uploads/ajaxfile.php?type=image",
-
      } );
      </script>
   
