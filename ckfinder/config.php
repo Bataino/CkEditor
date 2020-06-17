@@ -39,10 +39,10 @@ $config['licenseKey']  = '';
 
 $config['privateDir'] = array(
     'backend' => 'default',
-    'tags'   => '.ckfinder/tags',
-    'logs'   => '.ckfinder/logs',
-    'cache'  => '.ckfinder/cache',
-    'thumbs' => '.ckfinder/cache/thumbs',
+    'tags'   => './userfiles/ckfinder/tags',
+    'logs'   => './userfiles/ckfinder/logs',
+    'cache'  => './userfiles/ckfinder/cache',
+    'thumbs' => './userfiles/ckfinder/cache/thumbs',
 );
 
 /*============================ Images and Thumbnails ==================================*/
@@ -65,7 +65,7 @@ $config['images'] = array(
 $config['backends'][] = array(
     'name'         => 'default',
     'adapter'      => 'local',
-    'baseUrl'      => './userfiles/',
+    'baseUrl'      => './userfiles',
 //  'root'         => '', // Can be used to explicitly set the CKFinder user files directory.
     'chmodFiles'   => 0777,
     'chmodFolders' => 0755,
